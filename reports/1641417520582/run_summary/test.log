@@ -1,0 +1,2 @@
+[2022-01-05 06:18:46] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-01-05 06:18:46] [IMessager.java] [1] [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] FAIL [log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641417520582/fbcc92fe-6326-46eb-8719-5b125b98dd20/test.log]

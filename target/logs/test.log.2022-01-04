@@ -1,0 +1,863 @@
+2022-01-04 16:01:34 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://beamplify.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:01:34 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:01:35 Reflections [INFO] Reflections took 1164 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:01:35 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:01:35 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:01:35 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:01:35 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:01:35 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:01:36 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:01:36 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:01:36 2022-01-04]
+2022-01-04 16:01:45 Messager [INFO] INFO: opening url 'https://beamplify.com/'
+2022-01-04 16:01:50 DriverListener [INFO] URL 'https://beamplify.com/' opened
+2022-01-04 16:01:51 Screenshot [ERROR] ExecutionException error on capture screenshot: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+2022-01-04 16:01:51 DriverListener [ERROR] FAIL: url 'https://beamplify.com/' is not opened!
+2022-01-04 16:01:51 Screenshot [ERROR] ExecutionException error detected on capture full screenshot!
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot.takeFullScreenshot(Screenshot.java:526)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot.capture(Screenshot.java:388)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot.capture(Screenshot.java:179)
+	at com.qaprosoft.carina.core.foundation.webdriver.listener.DriverListener.captureScreenshot(DriverListener.java:286)
+	at com.qaprosoft.carina.core.foundation.webdriver.listener.DriverListener.onException(DriverListener.java:211)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy14.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.refindElement(ExtendedWebElement.java:389)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.getElement(ExtendedWebElement.java:265)
+	at com.solvd.gsmarena.HomePage.clickSignUpButton(HomePage.java:25)
+	at com.solvd.gsmarena.services.IUseGSM.goToSignUp(IUseGSM.java:11)
+	at com.solvd.gsmarena.tests.GSMtests.verifyHomePageWorkflow(GSMtests.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: java.lang.RuntimeException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:32)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)
+	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:145)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot$1.call(Screenshot.java:513)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot$1.call(Screenshot.java:470)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$yDXy1obj(RemoteWebDriver.java:489)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$yDXy1obj$accessor$3UreS4sz(RemoteWebDriver.java)
+	at org.openqa.selenium.remote.RemoteWebDriver$auxiliary$Z4EDhO58.call(Unknown Source)
+	at com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java)
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:30)
+	... 10 more
+2022-01-04 16:01:51 Screenshot [ERROR] ExecutionException error detected on capture full screenshot!
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot.takeFullScreenshot(Screenshot.java:526)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot.capture(Screenshot.java:388)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot.capture(Screenshot.java:179)
+	at com.qaprosoft.carina.core.foundation.listeners.CarinaListener.takeScreenshot(CarinaListener.java:1032)
+	at com.qaprosoft.carina.core.foundation.listeners.CarinaListener.takeScreenshot(CarinaListener.java:1014)
+	at com.qaprosoft.carina.core.foundation.listeners.CarinaListener.onTestFailure(CarinaListener.java:325)
+	at com.nordstrom.automation.testng.ListenerChain.onTestFailure(ListenerChain.java:395)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: java.lang.RuntimeException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:32)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)
+	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:145)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot$1.call(Screenshot.java:513)
+	at com.qaprosoft.carina.core.foundation.webdriver.Screenshot$1.call(Screenshot.java:470)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$yDXy1obj(RemoteWebDriver.java:489)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$yDXy1obj$accessor$3UreS4sz(RemoteWebDriver.java)
+	at org.openqa.selenium.remote.RemoteWebDriver$auxiliary$Z4EDhO58.call(Unknown Source)
+	at com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java)
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:30)
+	... 10 more
+2022-01-04 16:01:51 Messager [ERROR] TEST [gsm-automation - verifyHomePageWorkflow] FAILED at [16:01:51 2022-01-04] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e2b7c99f17a2bf9a27b283dd71fde4
+*** Element info: {Using=xpath, value=//i[@class='head-icon icon-user-plus']}
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$yDXy1obj(RemoteWebDriver.java:428)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$yDXy1obj$accessor$3UreS4sz(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$xVzLUJMw.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java)
+org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$yDXy1obj(RemoteWebDriver.java:315)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$yDXy1obj$accessor$3UreS4sz(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$ApMeGeh8.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.refindElement(ExtendedWebElement.java:408)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.getElement(ExtendedWebElement.java:265)
+com.solvd.gsmarena.HomePage.clickSignUpButton(HomePage.java:25)
+com.solvd.gsmarena.services.IUseGSM.goToSignUp(IUseGSM.java:11)
+com.solvd.gsmarena.tests.GSMtests.verifyHomePageWorkflow(GSMtests.java:14)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:794)
+org.testng.TestRunner.run(TestRunner.java:596)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+org.testng.SuiteRunner.run(SuiteRunner.java:276)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+org.testng.TestNG.runSuites(TestNG.java:1063)
+org.testng.TestNG.run(TestNG.java:1031)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-01-04 16:01:51 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:01:51 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] FAIL [log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641322894072/20d977a1-edf0-450b-85ad-2f3ddddddc37/test.log]
+2022-01-04 16:02:38 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://beamplify.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:02:38 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:02:39 Reflections [INFO] Reflections took 804 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:02:39 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:02:39 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:02:39 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:02:39 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:02:39 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:02:39 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:02:39 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:02:39 2022-01-04]
+2022-01-04 16:02:40 Messager [INFO] INFO: opening url 'https://beamplify.com/'
+2022-01-04 16:02:46 DriverListener [INFO] URL 'https://beamplify.com/' opened
+2022-01-04 16:02:50 Screenshot [ERROR] ExecutionException error on capture screenshot: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c55666ce6950952bca7b9fd59ac913d3
+2022-01-04 16:03:15 Messager [ERROR] TEST [gsm-automation - verifyHomePageWorkflow] FAILED at [16:03:15 2022-01-04] - chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AUWU', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Augusto\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c55666ce6950952bca7b9fd59ac913d3
+*** Element info: {Using=xpath, value=//i[@class='head-icon icon-user-plus']}
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$B9t3N7G8(RemoteWebDriver.java:428)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$B9t3N7G8$accessor$gpRvES6T(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$RXFDAUjW.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java)
+org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$B9t3N7G8(RemoteWebDriver.java:315)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$B9t3N7G8$accessor$gpRvES6T(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$8upR4USP.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.refindElement(ExtendedWebElement.java:408)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.getElement(ExtendedWebElement.java:265)
+com.solvd.gsmarena.HomePage.clickSignUpButton(HomePage.java:25)
+com.solvd.gsmarena.services.IUseGSM.goToSignUp(IUseGSM.java:11)
+com.solvd.gsmarena.tests.GSMtests.verifyHomePageWorkflow(GSMtests.java:14)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:794)
+org.testng.TestRunner.run(TestRunner.java:596)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+org.testng.SuiteRunner.run(SuiteRunner.java:276)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+org.testng.TestNG.runSuites(TestNG.java:1063)
+org.testng.TestNG.run(TestNG.java:1031)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-01-04 16:03:15 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:03:15 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] FAIL [log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641322958290/cf21da9b-8329-4468-b44e-b6b174895da5/test.log]
+2022-01-04 16:03:48 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:03:48 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:03:49 Reflections [INFO] Reflections took 696 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:03:49 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:03:49 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:03:49 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:03:49 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:03:49 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:03:49 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:03:49 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:03:49 2022-01-04]
+2022-01-04 16:03:51 Messager [INFO] INFO: opening url 'https://www.gsmarena.com/'
+2022-01-04 16:04:11 DriverHelper [ERROR] Unable to open url during 20sec!
+2022-01-04 16:04:11 DriverListener [INFO] URL 'https://www.gsmarena.com/' opened
+2022-01-04 16:04:11 Messager [ERROR] TEST [gsm-automation - verifyHomePageWorkflow] FAILED at [16:04:11 2022-01-04] - Unable to open url during 20sec!
+
+org.testng.Assert.fail(Assert.java:87)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:167)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:130)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.open(DriverHelper.java:120)
+com.solvd.gsmarena.HomePage.<init>(HomePage.java:14)
+com.solvd.gsmarena.services.IUseGSM.goToSignUp(IUseGSM.java:10)
+com.solvd.gsmarena.tests.GSMtests.verifyHomePageWorkflow(GSMtests.java:14)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:794)
+org.testng.TestRunner.run(TestRunner.java:596)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+org.testng.SuiteRunner.run(SuiteRunner.java:276)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+org.testng.TestNG.runSuites(TestNG.java:1063)
+org.testng.TestNG.run(TestNG.java:1031)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-01-04 16:04:11 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:04:11 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] FAIL [log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641323028718/1e721257-85ab-402a-8194-5dde1d0f817d/test.log]
+2022-01-04 16:05:36 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:05:36 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:05:37 Reflections [INFO] Reflections took 667 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:05:37 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:05:37 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:05:37 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:05:37 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:05:37 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:05:37 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:05:37 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:05:37 2022-01-04]
+2022-01-04 16:05:39 Messager [INFO] INFO: opening url 'https://www.gsmarena.com/'
+2022-01-04 16:05:55 DriverListener [INFO] URL 'https://www.gsmarena.com/' opened
+2022-01-04 16:05:59 DriverListener [INFO] PASS: element 'signUpButton' is clicked.
+2022-01-04 16:06:00 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] PASSED at [16:06:00 2022-01-04]
+2022-01-04 16:06:00 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:06:00 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] PASS [screenshots=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641323136692/1d278637-e86a-47d6-9d0f-bd73bb25f4f2/report.html | log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641323136692/1d278637-e86a-47d6-9d0f-bd73bb25f4f2/test.log]
+2022-01-04 16:07:18 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:07:18 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:07:19 Reflections [INFO] Reflections took 681 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:07:19 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:07:19 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:07:19 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:07:19 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:07:19 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:07:19 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:07:19 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:07:19 2022-01-04]
+2022-01-04 16:07:20 Messager [INFO] INFO: opening url 'https://www.gsmarena.com/'
+2022-01-04 16:07:35 DriverListener [INFO] URL 'https://www.gsmarena.com/' opened
+2022-01-04 16:07:38 DriverListener [INFO] PASS: element 'signUpButton' is clicked.
+2022-01-04 16:07:39 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] PASSED at [16:07:39 2022-01-04]
+2022-01-04 16:07:39 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:07:39 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] PASS [screenshots=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641323238108/71f05d27-e622-4f5c-82a2-cf6b5683a963/report.html | log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641323238108/71f05d27-e622-4f5c-82a2-cf6b5683a963/test.log]
+2022-01-04 16:08:00 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:08:00 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:08:01 Reflections [INFO] Reflections took 633 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:08:01 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:08:01 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:08:01 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:08:01 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:08:01 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:08:01 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:08:01 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:08:01 2022-01-04]
+2022-01-04 16:08:03 Messager [INFO] INFO: opening url 'https://www.gsmarena.com/'
+2022-01-04 16:08:15 DriverListener [INFO] URL 'https://www.gsmarena.com/' opened
+2022-01-04 16:08:16 DriverListener [INFO] PASS: element 'signUpButton' is clicked.
+2022-01-04 16:08:17 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] PASSED at [16:08:17 2022-01-04]
+2022-01-04 16:08:17 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:08:17 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] PASS [screenshots=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641323280671/6ee69487-4e75-4435-ad81-2d5a83b07158/report.html | log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641323280671/6ee69487-4e75-4435-ad81-2d5a83b07158/test.log]
+2022-01-04 16:43:46 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:43:46 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:43:49 Reflections [INFO] Reflections took 2193 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:43:49 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:43:50 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:43:50 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:43:50 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:43:50 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:43:50 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:43:50 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:43:50 2022-01-04]
+2022-01-04 16:44:00 Messager [INFO] INFO: opening url 'https://www.gsmarena.com/'
+2022-01-04 16:44:20 DriverHelper [ERROR] Unable to open url during 20sec!
+2022-01-04 16:44:26 IDriverPool [ERROR] Unable to quit driver for 6sec!
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.quitDriver(IDriverPool.java:316)
+	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.quitDrivers(IDriverPool.java:263)
+	at com.qaprosoft.carina.core.foundation.listeners.CarinaListener.onTestFinish(CarinaListener.java:372)
+	at com.qaprosoft.carina.core.foundation.listeners.CarinaListener.onTestFailure(CarinaListener.java:326)
+	at com.nordstrom.automation.testng.ListenerChain.onTestFailure(ListenerChain.java:395)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-01-04 16:44:26 Messager [ERROR] TEST [gsm-automation - verifyHomePageWorkflow] FAILED at [16:44:26 2022-01-04] - Unable to open url during 20sec!
+
+org.testng.Assert.fail(Assert.java:87)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:167)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:130)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.open(DriverHelper.java:120)
+com.solvd.gsmarena.HomePage.<init>(HomePage.java:14)
+com.solvd.gsmarena.services.IUseGSM.goToSignUp(IUseGSM.java:10)
+com.solvd.gsmarena.tests.GSMtests.verifyHomePageWorkflow(GSMtests.java:14)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:794)
+org.testng.TestRunner.run(TestRunner.java:596)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+org.testng.SuiteRunner.run(SuiteRunner.java:276)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+org.testng.TestNG.runSuites(TestNG.java:1063)
+org.testng.TestNG.run(TestNG.java:1031)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-01-04 16:44:26 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:44:26 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] FAIL [log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641325426504/20976af5-ab7c-4ad2-ab3d-723f257fccc4/test.log]
+2022-01-04 16:44:37 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com/
+env=DEMO
+selenium_url=http://localhost:9515/
+max_driver_count=3
+proxy_protocols=http,https,ftp
+browsermob_port=0
+auto_screenshot=true
+explicit_timeout=20
+retry_interval=5
+project_report_directory=./reports
+max_screen_history=10
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+locale=en_US
+thread_count=-1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+localization_encoding=UTF-8
+localization_testing=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+selenium_url=http://localhost:9515/
+
+------------- Driver capabilities -----------
+capabilities.browserName=CHROME
+================================================
+
+2022-01-04 16:44:38 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:44:38 Reflections [INFO] Reflections took 757 ms to scan 8 urls, producing 2329 keys and 11332 values 
+2022-01-04 16:44:38 FilterTestsListener [INFO] There are no any rules and limitations
+2022-01-04 16:44:38 CarinaListener [INFO] Set thread-count=1
+2022-01-04 16:44:38 CarinaListener [INFO] Set data-provider-thread-count=1
+2022-01-04 16:44:38 CarinaListener [INFO] CARINA_CORE_VERSION: 7.2.14
+2022-01-04 16:44:38 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:44:39 TestRunRegistrar [WARN] Reporting disabled: using no op test run registrar
+2022-01-04 16:44:39 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] STARTED at [16:44:39 2022-01-04]
+2022-01-04 16:44:40 Messager [INFO] INFO: opening url 'https://www.gsmarena.com/'
+2022-01-04 16:44:54 DriverListener [INFO] URL 'https://www.gsmarena.com/' opened
+2022-01-04 16:44:56 DriverListener [INFO] PASS: element 'signUpButton' is clicked.
+2022-01-04 16:44:57 Messager [INFO] TEST [gsm-automation - verifyHomePageWorkflow] PASSED at [16:44:57 2022-01-04]
+2022-01-04 16:44:57 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2022-01-04 16:44:57 Messager [INFO] RESULT #1: TEST [gsm-automation - verifyHomePageWorkflow] PASS [screenshots=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641325477923/4091377e-5f37-413c-9df2-f8d43c462d0b/report.html | log=file://C:\Users\Augusto\Documents\GitHub\gsm-automation\.\reports\1641325477923/4091377e-5f37-413c-9df2-f8d43c462d0b/test.log]

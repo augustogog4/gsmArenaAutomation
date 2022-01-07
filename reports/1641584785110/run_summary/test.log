@@ -1,0 +1,2 @@
+[2022-01-07 04:46:54] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-01-07 04:46:54] [IMessager.java] [1] [INFO] RESULT #1: TEST [gsmArenaAutomation - goToSpecificSearch] FAIL [log=file:///Users/solvd/Documents/GitHub/gsmArenaAutomation/./reports/1641584785110/c0f38c8d-b849-45ce-9caf-6286bdbf8001/test.log]

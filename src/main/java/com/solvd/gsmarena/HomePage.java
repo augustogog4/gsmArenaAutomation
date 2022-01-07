@@ -4,8 +4,6 @@ import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebEleme
 import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends AbstractPage {
 
@@ -21,10 +19,21 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//i[@class='head-icon icon-login']")
     private ExtendedWebElement loginButton;
 
+    @FindBy(xpath = "//input[@type= \"text\" and @name= \"sSearch\"]")
+    private ExtendedWebElement searchField;
+
     public SignUpPage clickSignUpButton(){
-        WebDriverWait w = new WebDriverWait(driver, 4);
-        w.until(ExpectedConditions.elementToBeClickable(signUpButton.getElement()));
         signUpButton.click();
+        return new SignUpPage(driver);
+    }
+
+    public SignUpPage clickLogInButton() {
+        loginButton.click();
+        return new SignUpPage(driver);
+    }
+
+    public SignUpPage clickSearchButton() {
+        searchField.click();
         return new SignUpPage(driver);
     }
 

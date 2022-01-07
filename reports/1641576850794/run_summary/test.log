@@ -1,0 +1,2 @@
+[2022-01-07 02:34:56] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-01-07 02:34:56] [IMessager.java] [1] [INFO] RESULT #1: TEST [gsmArenaAutomation - logInUserEmptyEmail] PASS [screenshots=file:///Users/solvd/Documents/GitHub/gsmArenaAutomation/./reports/1641576850794/13b0bbeb-4b51-4fea-9811-5725d2735074/report.html | log=file:///Users/solvd/Documents/GitHub/gsmArenaAutomation/./reports/1641576850794/13b0bbeb-4b51-4fea-9811-5725d2735074/test.log]
